@@ -1,37 +1,131 @@
 body{
   min-width: 320px;
+  width: 100%;
+}
+@import "feedback-form.css";
+@font-face {
+  font-family: Plainot;
+  src: url('../libs/10213.ttf');
 }
 .main-banner{
   .container{
     position: relative;
-    .main-banner-title{
-      display: block;
-      text-align: center;
-      font-size: 72px;
-      font-family:  Roboto,Helvetica,Arial,sans-serif;
-      color: white;
-      font-weight: 200;
-      text-shadow: 0  0.9px black;
-      text-transform: uppercase;
-      z-index: 5000;
-      overflow: auto;
+    .banner-block{
       margin: auto;
+      display: block;
       position: absolute;
-      top: 30%; left: 0; bottom: 0; right: 0;
-
+      width: 100%;
+      top: 13vh;
+      z-index: 500;
+      .bath-logo-container{
+        display: block;
+        width: 100%;
+        margin: 0 auto 50px auto;
+        text-align: center;
+        p{
+          height: 1px;
+          width: 10%;
+          background: white;
+          display: inline-block;
+          vertical-align: middle;
+        }
+        .bath-logo{
+          display: inline-block;
+          margin: 0 10px 0 10px;
+        }
+      }
+      .main-banner-title{
+        display: block;
+        text-align: center;
+        font-size: 72px;
+        font-weight: 200;
+        font-family: Plainot,Roboto, Helvetica, Arial, sans-serif;
+        color: white;
+        font-weight: 200;
+        text-shadow: 0  0.9px black;
+        text-transform: uppercase;
+        z-index: 5000;
+        overflow: auto;
+        margin: 0 auto 90px auto;
+      }
+      button{
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+        background: transparent;
+        border: 1px solid white;
+        border-radius: 20px;
+        text-shadow: 0 0 0 0.2px black;
+        font-size: 32px;
+        font-weight: 200;
+        outline: none;
+        padding: 20px 40px;
+        box-shadow: 0 6px white;
+        color: white;
+        &:hover{
+          background: white;
+          color: black;
+          box-shadow: 0 4px gray;
+          top:2px;
+          transition: all 2s;
+        }
+      }
     }
     .slick-arrow{
       display: none;
     }
     .slick-banner-header{
       z-index: 1;
-      .banner-pitcure{
-        position: relative;
-        display: block;
-        width: 100%;
-        margin: 0;
-        padding: 0;
+      div{
+        height:100vh;
+      }
+      .banner-picture-first{
+        background: url("../img/bath1.png") center top no-repeat;
+        background-size: cover;
+      }
+      .banner-picture-second{
+        background: url("../img/bath2.png") center top no-repeat;
+        background-size: cover;
+      }
+      .banner-picture-three{
+        background: url("../img/bath3.png") center top no-repeat;
+        background-size: cover;
       }
     }
+  }
+}
+.why-acrylic-bath{
+  width: 100%;
+  height:100vh;
+  .container{
+    h2{
+      display: block;
+      text-align: center;
+      font-size: 64px;
+      font-weight: 500;
+      font-family: Plainot,Roboto, Helvetica, Arial, sans-serif;
+      color: #706954;
+      text-shadow: 0  0.9px white;
+      text-transform: uppercase;
+      z-index: 5000;
+      overflow: auto;
+      margin: 80px auto 90px auto;
+    }
+    .acrylic-info{
+      display: block;
+      width: 70%;
+      margin: 0 auto;
+      text-align: center;
+      padding: 40px;
+      height: 700px;
+      .acrylic-info-block{
+        width: 500px;
+        height: 500px;
+        border: 1px solid black;
+        display: inline-block;
+      }
+    }
+
   }
 }

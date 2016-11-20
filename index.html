@@ -1,19 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>Рестоврация ванн</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+        <link rel="shortcut icon" href="/img/bath-logo.png" type="image/x-icon">
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/popup.css">
         <link rel="stylesheet" href="css/style.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -23,37 +23,75 @@
         <![endif]-->
         <section class="main-banner">
             <div class="container">
-                <h1 class="main-banner-title">рестоврация ванн<br>всего за два часа!</h1>
+                <div class="banner-block">
+                    <div class="bath-logo-container">
+                        <p></p>
+                        <img class="bath-logo" alt="logo" src="img/bath-logo.png" width="150px" height="150px">
+                        <p></p>
+                    </div>
+                    <h1 class="main-banner-title">рестоврация ванн<br>всего за два часа!</h1>
+                    <button class="test-popup-btn center-popup-btn">Закажите прямо сейчас!</button>
+                </div>
                 <div class="slick-banner-header">
 
-                    <picture class="banner-picture">
-                        <img src="img/bath1.png"
-                             изображения"
-                             title="Ванна"
-                             longdesc="подробное_описание.html#description">
-                    </picture>
-                    <picture>
-                        <img src="img/bath2.png"
-                             изображения"
-                        title="Ванна"
-                        longdesc="подробное_описание.html#description">
-                    </picture>
-                    <picture>
-                        <img src="img/bath3.png"
-                             изображения"
-                        title="Ванна"
-                        longdesc="подробное_описание.html#description">
-                    </picture>
+                    <div class="banner-picture-first">
+                    </div>
+                    <div class="banner-picture-second">
+                    </div>
+                    <div class="banner-picture-three">
+                    </div>
 
                 </div>
             </div>
         </section>
+        <section class="why-acrylic-bath">
+            <div class="container">
+                <h2 class="">Почему мы выбираем акрил?</h2>
+                <div class="acrylic-info">
+                    <div class="acrylic-info-block"></div>
+                    <div class="acrylic-info-block"></div>
+                    <div class="acrylic-info-block"></div>
+                    <div class="acrylic-info-block"></div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <div id="modal-test" class="modal-container">
+            <div class="shade"></div>
+
+            <form class="sign-up">
+                <h1 class="sign-up-title">Форма Заказа</h1>
+                <input required type="text" class="sign-up-input" placeholder="Как вас зовут?" autofocus>
+                <input required type="email" class="sign-up-input" placeholder="E-mail">
+                <input required type="text" class="sign-up-input" placeholder="Телефон">
+                <textarea placeholder="Комментарии" class="sign-up-input sign-up-text"></textarea>
+                <input type="submit" value="Заказать!" class="test-popup-btn-submit sign-up-button icon-arrow-right">
+                <div class="popup-icon close-modal">x</div>
+            </form>
+
+        </div>
+
+        <div id="modal-test-submit" class="modal-container">
+            <div class="shade"></div>
+            <div class="popup-content">
+                <div class="modal-text-cont">
+                    <h2>Спасибо за ваш заказ!</h2>
+                    <p>Наш сотрудник свяжется с вами в ближайшее время.</p>
+                </div>
+                <div class="popup-icon close-modal">x</div>
+            </div>
+        </div>
+
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/slick.js"></script>
+        <script src="js/popup.js"></script>
         <script src="libs/less.min.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
