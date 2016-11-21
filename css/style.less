@@ -3,9 +3,10 @@ body{
   width: 100%;
 }
 @import "feedback-form.css";
+@import "media.less";
 @font-face {
   font-family: Plainot;
-  src: url('../libs/10213.ttf');
+  src: url('../libs/10213.otf');
 }
 .main-banner{
   .container{
@@ -39,7 +40,7 @@ body{
         text-align: center;
         font-size: 72px;
         font-weight: 200;
-        font-family: Plainot,Roboto, Helvetica, Arial, sans-serif;
+        font-family: Plainot, Helvetica, Arial, sans-serif;
         color: white;
         font-weight: 200;
         text-shadow: 0  0.9px black;
@@ -47,6 +48,11 @@ body{
         z-index: 5000;
         overflow: auto;
         margin: 0 auto 90px auto;
+        span{
+          color: red;
+          font-size: 72px;
+          font-weight: bold;
+        }
       }
       button{
         display: block;
@@ -72,12 +78,9 @@ body{
         }
       }
     }
-    .slick-arrow{
-      display: none;
-    }
     .slick-banner-header{
       z-index: 1;
-      div{
+      .banner-picture{
         height:100vh;
       }
       .banner-picture-first{
@@ -91,6 +94,25 @@ body{
       .banner-picture-three{
         background: url("../img/bath3.png") center top no-repeat;
         background-size: cover;
+      }
+    }
+    .arrow-info{
+      position: absolute;
+      top:90%;
+      width: 100%;
+      margin: auto;
+      text-align: center;
+      height: 50px;
+      opacity: 0.5;
+      z-index: 100;
+      &:hover{
+        cursor: pointer;
+        opacity: 1;
+        transition: opacity 1s;
+      }
+      .fa-chevron-down{
+        color: red;
+        font-size: 64px;
       }
     }
   }

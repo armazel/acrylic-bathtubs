@@ -6,9 +6,12 @@ $(".test-popup-btn").on("click", function () {
     popup.addClass("open");
 });
 $(".sign-up").on("submit", function (e) {
-    var popup = $("#modal-test-submit");
+    var popup = $("#modal-test-submit")
+    var formInput=$('.sign-up input');
+    var formAreaOfText=$('.sign-up textarea');
         e.preventDefault();
-        e.stopPropagation();
+        formInput.val('');
+        formAreaOfText.val('');
         popup.addClass("open");
 });
 
