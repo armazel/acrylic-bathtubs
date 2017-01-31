@@ -6,6 +6,14 @@ body{
 @import "media.less";
 @font-face {
   font-family: Plainot;
+  src: url('../libs/10213.ttf');
+}
+@font-face {
+  font-family: Myriad;
+  src: url('../libs/Myriad-Pro-Light_31642.ttf');
+}
+@font-face {
+  font-family: PlainotLight;
   src: url('../libs/10213.otf');
 }
 .main-banner{
@@ -24,9 +32,9 @@ body{
         margin: 0 auto 50px auto;
         text-align: center;
         p{
-          height: 1px;
-          width: 10%;
-          background: white;
+          height: 2px;
+          width: 40%;
+          background: #706954;
           display: inline-block;
           vertical-align: middle;
         }
@@ -43,15 +51,17 @@ body{
         font-family: Plainot, Helvetica, Arial, sans-serif;
         color: white;
         font-weight: 200;
+        letter-spacing: 3px;
         text-shadow: 0  0.9px black;
         text-transform: uppercase;
         z-index: 5000;
         overflow: auto;
         margin: 0 auto 90px auto;
         span{
-          color: red;
+          color: hsl(15, 66%, 77%);;
           font-size: 72px;
           font-weight: bold;
+          font-family: PlainotLength, Helvetica, Arial, sans-serif;
         }
       }
       button{
@@ -65,6 +75,7 @@ body{
         text-shadow: 0 0 0 0.2px black;
         font-size: 32px;
         font-weight: 200;
+        font-family: Myriad,Roboto, Helvetica, Arial, sans-serif;
         outline: none;
         padding: 20px 40px;
         box-shadow: 0 6px white;
@@ -103,7 +114,7 @@ body{
       margin: auto;
       text-align: center;
       height: 50px;
-      opacity: 0.5;
+      opacity: 0.8;
       z-index: 100;
       &:hover{
         cursor: pointer;
@@ -111,7 +122,7 @@ body{
         transition: opacity 1s;
       }
       .fa-chevron-down{
-        color: red;
+        color: #706954;
         font-size: 64px;
       }
     }
@@ -126,7 +137,7 @@ body{
       text-align: center;
       font-size: 64px;
       font-weight: 500;
-      font-family: Plainot,Roboto, Helvetica, Arial, sans-serif;
+      font-family: Myriad,Roboto, Helvetica, Arial, sans-serif;
       color: #706954;
       text-shadow: 0  0.9px white;
       text-transform: uppercase;
@@ -136,18 +147,23 @@ body{
     }
     .acrylic-info{
       display: block;
-      width: 70%;
+      width: 100%;
       margin: 0 auto;
       text-align: center;
-      padding: 40px;
+      padding: 40px 0 40px 0;
       height: 700px;
       .acrylic-info-block{
-        width: 500px;
+        width: 50%;
         height: 500px;
         border: 1px solid black;
+        margin: 0;
+        outline: none;
+        height: 100%;
         display: inline-block;
       }
     }
 
   }
 }
+
+@import "media";
