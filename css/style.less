@@ -26,6 +26,7 @@ body{
   .container{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
   .logo-header{
@@ -99,7 +100,7 @@ body{
   z-index: 10;
   background: rgba(0,0,0,0.4);
   opacity: 1;
-  position: fixed;
+  position: absolute;
   .container{
     .nav-menu{
       display: flex;
@@ -109,11 +110,14 @@ body{
       li{
         display: inline-block;
         list-style-type: none;
-        font-size: 21px;
-        font-family: Plainot, Helvetica, Arial, sans-serif;
-        color: white;
-        font-weight: 200;
-        transition: all 0.5s ease;
+        a{
+          font-size: 21px;
+          font-family: Plainot, Helvetica, Arial, sans-serif;
+          color: white;
+          font-weight: 200;
+          transition: all 0.5s ease;
+          text-decoration: none;
+        }
         &:hover{
           cursor: pointer;
           opacity: 0.7;
@@ -131,7 +135,7 @@ body{
       display: block;
       position: absolute;
       width: 100%;
-      top: 13vh;
+      top: 16vh;
       z-index: 500;
       .bath-logo-container{
         display: block;
@@ -157,17 +161,16 @@ body{
         font-weight: 200;
         font-family: Plainot, Helvetica, Arial, sans-serif;
         color: white;
-        font-weight: 200;
         letter-spacing: 3px;
         text-shadow: 0  0.9px black;
         text-transform: uppercase;
         z-index: 5000;
         overflow: auto;
-        margin: 0 auto 90px auto;
+        margin: 100px auto 90px auto;
         span{
-          color: hsl(15, 66%, 77%);;
+          color: hsl(15, 66%, 77%);
           font-size: 72px;
-          font-weight: bold;
+          font-weight: 500;
           font-family: PlainotLength, Helvetica, Arial, sans-serif;
         }
       }
@@ -241,7 +244,6 @@ body{
 }
 .why-acrylic-bath{
   width: 100%;
-  height:100vh;
   .container{
     h2{
       display: block;
@@ -257,24 +259,140 @@ body{
       margin: 80px auto 90px auto;
     }
 
-    .acrylic-info{
-      display: block;
+    .roof-info{
       width: 100%;
       margin: 0 auto;
       text-align: center;
       padding: 40px 0 40px 0;
-      height: 700px;
-      .acrylic-info-block{
-        width: 50%;
-        height: 500px;
-        border: 1px solid black;
-        margin: 0;
-        outline: none;
-        height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      .roof-info-block{
         display: inline-block;
+        transition: all 0.5s ease;
+        position: relative;
+        &:hover{
+          top:-10px;
+          transition: all 1s ease;
+      }
+        &:hover .logo-info{
+           border:1px solid black;
+           background: hsl(15, 66%, 77%);
+         }
+        &:hover .logo-info i{
+          opacity: 1;
+        }
+        .logo-info{
+          width: 160px;
+          height: 160px;
+          border-radius: 50%;
+          display: inline-block;
+          border:4px solid #dee0e0;
+          transition: all 2s ease;
+          i{
+            font-size: 94px;
+            line-height: 50%;
+            display: inline-block;
+            position: relative;
+            top: 35%;
+            opacity: 0.6;
+            transition: all 0.5s ease;
+          }
+        }
+        .info{
+          display: block;
+          p{
+            font-size: 36px;
+            font-family: Myriad,Roboto, Helvetica, Arial, sans-serif;
+          }
+        }
       }
     }
 
+
+  }
+}
+.services{
+  .container{
+    width: 100%;
+    h2{
+      display: block;
+      text-align: center;
+      font-size: 64px;
+      font-weight: 500;
+      font-family: Myriad,Roboto, Helvetica, Arial, sans-serif;
+      color: #706954;
+      text-shadow: 0  0.9px white;
+      text-transform: uppercase;
+      z-index: 5000;
+      overflow: auto;
+      margin: 80px auto 90px auto;
+    }
+    .services-list{
+      display: flex;
+      flex-wrap: wrap;
+      .service-block{
+        height: 300px;
+        h3{
+          display: block;
+          text-align: center;
+          font-size: 24px;
+          font-weight: 500;
+          font-family: Myriad,Roboto, Helvetica, Arial, sans-serif;
+          color: white;
+          text-shadow: 0  0.9px white;
+          text-transform: uppercase;
+        }
+        p{
+          text-align: center;
+          text-shadow: 0  0.9px black;
+          font-size: 18px;
+          color: white;
+          font-family: Myriad,Roboto, Helvetica, Arial, sans-serif;
+        }
+      }
+      .falc{
+        background: url("../img/falca.jpg") no-repeat;
+        background-size: cover;
+        flex: 1 33%;
+      }
+      .prof-list{
+        background: url("../img/profnastil.jpg") no-repeat;
+        background-size: cover;
+        flex: 1 33%;
+      }
+      .metalo-cherep{
+        background: url("../img/metalocherepica.jpg") no-repeat;
+        background-size: cover;
+        flex: 1 33%;
+      }
+      .keram-cherep{
+        background: url("../img/kearmich.jpg") no-repeat;
+        background-size: cover;
+        flex: 1 100%;
+      }
+    }
+    }
+
+}
+
+
+.services{
+  display: flex;
+  flex-direction: row;
+  .container{
+
+  }
+
+}
+
+.video-info{
+  background: ghostwhite;
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
 }
 

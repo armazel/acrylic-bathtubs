@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/font-awesome-4.7-2.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/popup.css">
         <link rel="stylesheet" href="css/style.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -40,10 +41,10 @@
         <section class="navbar-header">
             <div class="container">
                 <ul class="nav-menu">
-                    <li>Главная</li>
-                    <li>Почему нужна кровля?</li>
-                    <li>Услуги</li>
-                    <li>Контакты</li>
+                    <li><a>Главная</a></li>
+                    <li><a>Кровля крыши</a></li>
+                    <li><a>Услуги</a></li>
+                    <li><a>Контакты</a></li>
                 </ul>
             </div>
         </section>
@@ -70,15 +71,68 @@
         </section>
         <section class="why-acrylic-bath"><a id="info"></a>
             <div class="container">
-                <h2 class="">Почему мы выбираем акрил?</h2>
-                <div class="acrylic-info">
-                    <div class="acrylic-info-block"></div>
-                    <div class="acrylic-info-block"></div>
-                    <div class="acrylic-info-block"></div>
-                    <div class="acrylic-info-block"></div>
+                <h2>С кровлей крыши вы получаете:</h2>
+                <div class="roof-info">
+                    <div class="roof-info-block wow slideInLeft">
+                        <div class="logo-info">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="info">
+                            <p>Долговечность</p>
+                        </div>
+                    </div>
+                    <div class="roof-info-block wow bounceInDown">
+                        <div class="logo-info">
+                            <i class="fa fa-cubes" aria-hidden="true"></i>
+                        </div>
+                        <div class="info">
+                            <p>Эстетичность</p>
+                        </div>
+                    </div>
+                    <div class="roof-info-block wow slideInRight">
+                        <div class="logo-info">
+                            <i class="fa fa-shield" aria-hidden="true"></i>
+                        </div>
+                        <div class="info">
+                            <p>Надежность</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
+        <section class="services">
+            <div class="container">
+                <h2>Наши услуги</h2>
+                <div class="services-list">
+                    <div class="service-block falc">
+                        <h3>Двойной фальц</h3>
+                        <p>Дом без крыши – это и
+                            виды кровли: мягкие и жесткие, рулонные и штучные, плоские и профильные.</p>
+                    </div>
+                    <div class="service-block prof-list">
+                        <h3>Профлист</h3>
+                        <p>Дом без крыши – это и
+                            виды кровли: мягкие и жесткие, рулонные и штучные, плоские и профильные.</p>
+                    </div>
+                    <div class="service-block metalo-cherep">
+                        <h3>Металлочерепица</h3>
+                        <p>Дом без крыши – это и
+                            виды кровли: мягкие и жесткие, рулонные и штучные, плоские и профильные.</p>
+                    </div>
+                    <div class="service-block keram-cherep">
+                        <h3>Керамическая черепица</h3>
+                        <p>Дом без крыши – это и
+                            виды кровли: мягкие и жесткие, рулонные и штучные, плоские и профильные.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--<section class="video-info">
+            <div class="container">
+                <iframe width="894" height="480" src="https://www.youtube.com/embed/5m5MbwYvvwg" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>-->
 
 
 
@@ -116,6 +170,10 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/slick.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
         <script src="js/popup.js"></script>
         <script src="libs/less.min.js"></script>
 
