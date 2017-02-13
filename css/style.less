@@ -48,12 +48,17 @@ body{
       .phone{
         p{
           margin: 0;
-          font-size: 21px;
           i{
             font-size: 26px;
             padding-right: 10px;
             position: relative;
             top: 4px;
+          }
+          a{
+            margin: 0;
+            font-size: 21px;
+            text-decoration: none;
+            color: black;
           }
         }
         span{
@@ -265,8 +270,6 @@ body{
       text-align: center;
       padding: 40px 0 40px 0;
       display: block;
-      text-align: center;
-      margin: 0 auto;
       .roof-info-block{
         display: inline-block;
         transition: all 0.5s ease;
@@ -277,7 +280,7 @@ body{
           transition: all 1s ease;
       }
         &:hover .logo-info{
-           border:1px solid black;
+           border:3px solid black;
            background: hsl(15, 66%, 77%);
          }
         &:hover .logo-info i{
@@ -288,7 +291,7 @@ body{
           height: 160px;
           border-radius: 50%;
           display: inline-block;
-          border:4px solid #dee0e0;
+          border:3px solid #dee0e0;
           transition: all 2s ease;
           i{
             font-size: 94px;
@@ -333,42 +336,61 @@ body{
       display: flex;
       flex-wrap: wrap;
       .service-block{
+        opacity: 1;
         height: 300px;
+        transition: all 0.5s ease;
+        &:hover{
+          cursor: pointer;
+          opacity: 0,7;
+          background-blend-mode: hard-light;
+        }
+        &:hover p{
+          opacity: 1;
+        }
+        &:hover h3{
+          top:10%;
+        }
         h3{
           display: block;
           text-align: center;
-          font-size: 24px;
+          font-size: 28px;
+          position: relative;
+          top:40%;
           font-weight: 500;
           font-family: Myriad,Roboto, Helvetica, Arial, sans-serif;
           color: white;
           text-shadow: 0  0.9px white;
           text-transform: uppercase;
+          transition: all 0.5s ease;
         }
         p{
           text-align: center;
-          text-shadow: 0  0.9px black;
-          font-size: 18px;
+          text-shadow: 0  1.4px black;
+          font-size: 21px;
+          font-weight: 400;
+          opacity: 0;
+          transition: all 0.5s ease;
           color: white;
           font-family: Myriad,Roboto, Helvetica, Arial, sans-serif;
         }
       }
       .falc{
-        background: url("../img/falca.jpg") no-repeat;
+        background: rgba(0,0,0,0.3) url("../img/falca.jpg") no-repeat;
         background-size: cover;
         flex: 1 33%;
       }
       .prof-list{
-        background: url("../img/profnastil.jpg") no-repeat;
+        background: rgba(0,0,0,0.3) url("../img/profnastil.jpg") no-repeat;
         background-size: cover;
         flex: 1 33%;
       }
       .metalo-cherep{
-        background: url("../img/metalocherepica.jpg") no-repeat;
+        background: rgba(0,0,0,0.3) url("../img/metalocherepica.jpg") no-repeat;
         background-size: cover;
         flex: 1 33%;
       }
       .keram-cherep{
-        background: url("../img/kearmich.jpg") no-repeat;
+        background: rgba(0,0,0,0.3) url("../img/kearmich.jpg") no-repeat;
         background-size: cover;
         flex: 1 100%;
       }
