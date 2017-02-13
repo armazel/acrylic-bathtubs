@@ -16,6 +16,113 @@ body{
   font-family: PlainotLight;
   src: url('../libs/10213.otf');
 }
+@font-face {
+  font-family: Astachov;
+  src: url('../libs/10403.ttf');
+}
+.header{
+  background: white;
+  width: 100%;
+  .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  .logo-header{
+    h2{
+      a{
+        font-size: 28px;
+        font-family: Astachov;
+        padding: 20px;
+        margin: 0;
+        color: black;
+        text-decoration: none;
+      }
+      &:hover{
+        cursor: pointer;
+      }
+      }
+    }
+    .info-header{
+      .phone{
+        p{
+          margin: 0;
+          font-size: 21px;
+          i{
+            font-size: 26px;
+            padding-right: 10px;
+            position: relative;
+            top: 4px;
+          }
+        }
+        span{
+          font-size: 16px;
+          color: #dcd3cd;
+        }
+
+      }
+    }
+    .order{
+      .btn{
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+        background: transparent;
+        border: 1px solid black;
+        border-radius: 10px;
+        transition: all .5s ease;
+        font-size: 24px;
+        font-weight: 200;
+        font-family: Myriad, Roboto, Helvetica, Arial, sans-serif;
+        outline: none;
+        opacity: 0.7;
+        padding: 5px 40px;
+        box-shadow: 0 6px white;
+        color: black;
+        &:hover{
+          opacity: 1;
+          background: #ebb19e;
+          color: white;
+          border: 1px solid transparent;
+        }
+        &:active{
+          top:2px;
+        }
+      }
+    }
+
+  }
+}
+.navbar-header{
+  width: 100%;
+  z-index: 10;
+  background: rgba(0,0,0,0.4);
+  opacity: 1;
+  position: fixed;
+  .container{
+    .nav-menu{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      li{
+        display: inline-block;
+        list-style-type: none;
+        font-size: 21px;
+        font-family: Plainot, Helvetica, Arial, sans-serif;
+        color: white;
+        font-weight: 200;
+        transition: all 0.5s ease;
+        &:hover{
+          cursor: pointer;
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
+
 .main-banner{
   .container{
     position: relative;
@@ -64,7 +171,7 @@ body{
           font-family: PlainotLength, Helvetica, Arial, sans-serif;
         }
       }
-      button{
+      .btn{
         display: block;
         margin: 0 auto;
         position: relative;
@@ -73,6 +180,7 @@ body{
         border: 1px solid white;
         border-radius: 20px;
         text-shadow: 0 0 0 0.2px black;
+        transition: all 1s ease;
         font-size: 32px;
         font-weight: 200;
         font-family: Myriad,Roboto, Helvetica, Arial, sans-serif;
@@ -83,9 +191,12 @@ body{
         &:hover{
           background: white;
           color: black;
-          box-shadow: 0 4px gray;
+          box-shadow: 0 6px gray;
+
+        }
+        &:active{
           top:2px;
-          transition: all 2s;
+          box-shadow: 0 3px gray;
         }
       }
     }
@@ -95,15 +206,15 @@ body{
         height:100vh;
       }
       .banner-picture-first{
-        background: url("../img/bath1.png") center top no-repeat;
+        background: url("../img/roofMain.jpg") center top no-repeat;
         background-size: cover;
       }
       .banner-picture-second{
-        background: url("../img/bath2.png") center top no-repeat;
+        background: url("../img/roof1.jpg") center top no-repeat;
         background-size: cover;
       }
       .banner-picture-three{
-        background: url("../img/bath3.png") center top no-repeat;
+        background: url("../img/roof2.jpg") center top no-repeat;
         background-size: cover;
       }
     }
