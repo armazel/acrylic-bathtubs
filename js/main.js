@@ -10,9 +10,13 @@ $(document).ready(function(){
 
     $('.slick-examples').slick({
         touchMove:true,
+        dots:false,
+        infinity:false,
         speed: 300,
         slidesToShow: 3,
         slidesToScroll: 1,
+        nextArrow:'<div class="arrow-right"><i class="fa fa-chevron-right slick-next" aria-hidden="true"></i></div>',
+        prevArrow:'<div class="arrow-left"><i class="fa fa-chevron-left slick-prev" aria-hidden="true"></i></div>',
         responsive: [
             {
                 breakpoint: 1024,

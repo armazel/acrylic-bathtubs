@@ -20,6 +20,23 @@ body{
   font-family: Astachov;
   src: url('../libs/10403.ttf');
 }
+*{
+  outline: none;
+}
+
+h2{
+  display: block;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 500;
+  font-family: Myriad,Roboto, Helvetica, Arial, sans-serif;
+  color: #706954;
+  text-shadow: 0  0.9px white;
+  text-transform: uppercase;
+  z-index: 5000;
+  margin: 0;
+}
+
 .header{
   background: white;
   width: 100%;
@@ -30,6 +47,7 @@ body{
     justify-content: space-around;
     align-items: center;
   .logo-header{
+    overflow: hidden;
     h2{
       a{
         font-size: 28px;
@@ -215,6 +233,11 @@ body{
       z-index: 1;
       .banner-picture{
         height:95vh;
+        .container{
+          width: 100%;
+          height: inherit;
+          background: rgba(0,0,0,0.3);
+        }
       }
       .banner-picture-first{
         background: url("../img/Roofing1.jpg") center top no-repeat;
@@ -312,14 +335,63 @@ body{
   }
 }
 .examples{
+  margin: 50px auto;
 .container{
-  width: 90%;
+  width: 85%;
   display: block;
   margin: 0 auto;
+  h2{
+    margin: 80px auto 90px auto;
+  }
   .slick-examples{
     img{
       display: inline-block;
-      padding: 10px;
+      padding: 0 10px;
+      transition: all 0.5s ease;
+      &:hover{
+        opacity: 0.7;
+        cursor: pointer;
+      }
+    }
+    .arrow-right {
+      display: inline-block;
+      position: absolute;
+      right: -65px;
+      top:0;
+      height: 100%;
+      width: 5%;
+      background: rgba(0,0,0,0);
+      transition: all 0.5s ease;
+      &:hover{
+        cursor: pointer;
+        background: rgba(0,0,0,0.2);
+      }
+      i{
+        font-size: 36px;
+        position: absolute;
+        top: 40%;
+        right: 30%;
+      }
+    }
+    .arrow-left {
+      display: inline-block;
+      top: 0;
+      position: absolute;
+      left:-62px;
+      height: 100%;
+      width: 5%;
+      background: rgba(0,0,0,0);
+      transition: all 0.5s ease;
+      &:hover{
+        cursor: pointer;
+        background: rgba(0,0,0,0.2);
+      }
+      i{
+        font-size: 36px;
+        top:40%;
+        left:30%;
+        position: absolute;
+      }
     }
   }
 }
@@ -429,5 +501,4 @@ body{
 
 
 
-@import "modal.css";
 @import "media";
