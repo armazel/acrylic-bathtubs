@@ -1,0 +1,468 @@
+@import "feedback-form.css";
+body {
+  min-width: 320px;
+  width: 100%;
+}
+@media screen and (max-width: 1366px) {
+  /*.main-banner .container .slick-banner-header .banner-picture.banner-picture{
+      height: 800px;
+    }*/
+}
+@font-face {
+  font-family: Plainot;
+  src: url('../libs/10213.ttf');
+}
+@font-face {
+  font-family: Myriad;
+  src: url('../libs/Myriad-Pro-Light_31642.ttf');
+}
+@font-face {
+  font-family: PlainotLight;
+  src: url('../libs/10213.otf');
+}
+@font-face {
+  font-family: Astachov;
+  src: url('../libs/10403.ttf');
+}
+* {
+  outline: none;
+}
+h2 {
+  display: block;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 500;
+  font-family: Myriad, Roboto, Helvetica, Arial, sans-serif;
+  color: #706954;
+  text-shadow: 0  0.9px white;
+  text-transform: uppercase;
+  z-index: 5000;
+  margin: 0;
+}
+.header {
+  background: white;
+  width: 100%;
+}
+.header .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.header .container .logo-header {
+  overflow: hidden;
+}
+.header .container .logo-header h2 a {
+  font-size: 28px;
+  font-family: Astachov;
+  padding: 20px;
+  margin: 0;
+  color: black;
+  text-decoration: none;
+}
+.header .container .logo-header h2:hover {
+  cursor: pointer;
+}
+.header .container .info-header .phone p {
+  margin: 0;
+}
+.header .container .info-header .phone p i {
+  font-size: 26px;
+  padding-right: 10px;
+  position: relative;
+  top: 4px;
+}
+.header .container .info-header .phone p a {
+  margin: 0;
+  font-size: 21px;
+  text-decoration: none;
+  color: black;
+}
+.header .container .info-header .phone span {
+  font-size: 16px;
+  color: #dcd3cd;
+}
+.header .container .order .btn {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 10px;
+  transition: all .5s ease;
+  font-size: 24px;
+  font-weight: 200;
+  font-family: Myriad, Roboto, Helvetica, Arial, sans-serif;
+  outline: none;
+  opacity: 0.7;
+  padding: 5px 40px;
+  box-shadow: 0 6px white;
+  color: black;
+}
+.header .container .order .btn:hover {
+  opacity: 1;
+  background: #ebb19e;
+  color: white;
+  border: 1px solid transparent;
+}
+.header .container .order .btn:active {
+  top: 2px;
+}
+.navbar-header {
+  width: 100%;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+  position: absolute;
+}
+.navbar-header .container .nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.navbar-header .container .nav-menu li {
+  display: inline-block;
+  list-style-type: none;
+}
+.navbar-header .container .nav-menu li a {
+  font-size: 21px;
+  font-family: Arial, sans-serif;
+  color: white;
+  font-weight: 200;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+.navbar-header .container .nav-menu li:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.main-banner .container {
+  position: relative;
+}
+.main-banner .container .banner-block {
+  margin: auto;
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 16vh;
+  z-index: 500;
+}
+.main-banner .container .banner-block .bath-logo-container {
+  display: block;
+  width: 100%;
+  margin: 0 auto 50px auto;
+  text-align: center;
+}
+.main-banner .container .banner-block .bath-logo-container p {
+  height: 2px;
+  width: 40%;
+  background: #706954;
+  display: inline-block;
+  vertical-align: middle;
+}
+.main-banner .container .banner-block .bath-logo-container .bath-logo {
+  display: inline-block;
+  margin: 0 10px 0 10px;
+}
+.main-banner .container .banner-block .main-banner-title {
+  display: block;
+  text-align: center;
+  font-size: 72px;
+  font-weight: 200;
+  font-family: Plainot, Helvetica, Arial, sans-serif;
+  color: white;
+  letter-spacing: 3px;
+  text-shadow: 0  0.9px black;
+  text-transform: uppercase;
+  z-index: 5000;
+  overflow: auto;
+  margin: 100px auto 90px auto;
+}
+.main-banner .container .banner-block .main-banner-title span {
+  display: flex;
+  color: #ebb19e;
+  font-size: 72px;
+  font-weight: 500;
+  font-family: PlainotLength, Helvetica, Arial, sans-serif;
+  justify-content: center;
+  flex: 1 1;
+}
+.main-banner .container .banner-block .btn {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 20px;
+  text-shadow: 0 0 0 0.2px black;
+  transition: all 1s ease;
+  font-size: 32px;
+  font-weight: 200;
+  font-family: Myriad, Roboto, Helvetica, Arial, sans-serif;
+  outline: none;
+  padding: 20px 40px;
+  box-shadow: 0 6px white;
+  color: white;
+}
+.main-banner .container .banner-block .btn:hover {
+  background: white;
+  color: black;
+  box-shadow: 0 6px gray;
+}
+.main-banner .container .banner-block .btn:active {
+  top: 2px;
+  box-shadow: 0 3px gray;
+}
+.main-banner .container .slick-banner-header {
+  z-index: 1;
+}
+.main-banner .container .slick-banner-header .banner-picture {
+  height: 95vh;
+}
+.main-banner .container .slick-banner-header .banner-picture .container {
+  width: 100%;
+  height: inherit;
+  background: rgba(0, 0, 0, 0.3);
+}
+.main-banner .container .slick-banner-header .banner-picture-first {
+  background: url("../img/Roofing1.jpg") center top no-repeat;
+  background-size: cover;
+}
+.main-banner .container .slick-banner-header .banner-picture-second {
+  background: url("../img/bath.jpg") center top no-repeat;
+  background-size: cover;
+}
+.main-banner .container .slick-banner-header .banner-picture-three {
+  background: url("../img/roofing-boca-raton.jpg") center top no-repeat;
+  background-size: cover;
+}
+.main-banner .container .arrow-info {
+  position: absolute;
+  top: 85%;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  height: 50px;
+  opacity: 0.8;
+  z-index: 100;
+}
+.main-banner .container .arrow-info:hover {
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 1s;
+}
+.main-banner .container .arrow-info .fa-chevron-down {
+  color: #706954;
+  font-size: 64px;
+}
+.why-acrylic-bath {
+  width: 100%;
+}
+.why-acrylic-bath .container h2 {
+  display: block;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 500;
+  font-family: Myriad, Roboto, Helvetica, Arial, sans-serif;
+  color: #706954;
+  text-shadow: 0  0.9px white;
+  text-transform: uppercase;
+  z-index: 5000;
+  overflow: auto;
+  margin: 80px auto 90px auto;
+}
+.why-acrylic-bath .container .roof-info {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 0 40px 0;
+  display: block;
+}
+.why-acrylic-bath .container .roof-info .roof-info-block {
+  display: inline-block;
+  transition: all 0.5s ease;
+  position: relative;
+  width: 33%;
+}
+.why-acrylic-bath .container .roof-info .roof-info-block:hover {
+  top: -10px;
+  transition: all 1s ease;
+}
+.why-acrylic-bath .container .roof-info .roof-info-block:hover .logo-info {
+  cursor: pointer;
+}
+.why-acrylic-bath .container .roof-info .roof-info-block:hover .logo-info i {
+  opacity: 1;
+}
+.why-acrylic-bath .container .roof-info .roof-info-block .logo-info {
+  width: 160px;
+  height: 160px;
+  display: inline-block;
+  transition: all 2s ease;
+}
+.why-acrylic-bath .container .roof-info .roof-info-block .logo-info img {
+  width: 160px;
+  height: 160px;
+}
+.why-acrylic-bath .container .roof-info .roof-info-block .info {
+  display: block;
+}
+.why-acrylic-bath .container .roof-info .roof-info-block .info p {
+  font-size: 36px;
+  font-family: Myriad, Roboto, Helvetica, Arial, sans-serif;
+}
+.examples {
+  margin: 50px auto;
+}
+.examples .container {
+  width: 85%;
+  display: block;
+  margin: 0 auto;
+}
+.examples .container h2 {
+  margin: 80px auto 90px auto;
+}
+.examples .container .slick-examples img {
+  display: inline-block;
+  padding: 0 10px;
+  transition: all 0.5s ease;
+}
+.examples .container .slick-examples img:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.examples .container .slick-examples .arrow-right {
+  display: inline-block;
+  position: absolute;
+  right: -60px;
+  top: 0;
+  height: 100%;
+  width: 5%;
+  background: rgba(0, 0, 0, 0);
+  transition: all 0.5s ease;
+}
+.examples .container .slick-examples .arrow-right:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.2);
+}
+.examples .container .slick-examples .arrow-right i {
+  font-size: 36px;
+  position: absolute;
+  top: 40%;
+  right: 30%;
+}
+.examples .container .slick-examples .arrow-left {
+  display: inline-block;
+  top: 0;
+  position: absolute;
+  left: -57px;
+  height: 100%;
+  width: 5%;
+  background: rgba(0, 0, 0, 0);
+  transition: all 0.5s ease;
+}
+.examples .container .slick-examples .arrow-left:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.2);
+}
+.examples .container .slick-examples .arrow-left i {
+  font-size: 36px;
+  top: 40%;
+  left: 30%;
+  position: absolute;
+}
+.services .container {
+  width: 100%;
+}
+.services .container h2 {
+  display: block;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 500;
+  font-family: Myriad, Roboto, Helvetica, Arial, sans-serif;
+  color: #706954;
+  text-shadow: 0  0.9px white;
+  text-transform: uppercase;
+  z-index: 5000;
+  overflow: auto;
+  margin: 80px auto 90px auto;
+}
+.services .container .services-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.services .container .services-list .service-block {
+  opacity: 1;
+  height: 300px;
+  transition: all 0.5s ease;
+}
+.services .container .services-list .service-block:hover {
+  cursor: pointer;
+  opacity: 0,7;
+  background-blend-mode: hard-light;
+}
+.services .container .services-list .service-block:hover p {
+  opacity: 1;
+}
+.services .container .services-list .service-block:hover h3 {
+  top: 10%;
+}
+.services .container .services-list .service-block h3 {
+  display: block;
+  text-align: center;
+  font-size: 28px;
+  position: relative;
+  top: 40%;
+  font-weight: 500;
+  font-family: Myriad, Roboto, Helvetica, Arial, sans-serif;
+  color: white;
+  text-shadow: 0  0.9px white;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+.services .container .services-list .service-block p {
+  text-align: center;
+  text-shadow: 0  1.4px black;
+  font-size: 21px;
+  font-weight: 400;
+  opacity: 0;
+  transition: all 0.5s ease;
+  color: white;
+  font-family: Myriad, Roboto, Helvetica, Arial, sans-serif;
+}
+.services .container .services-list .falc {
+  background: rgba(0, 0, 0, 0.3) url("../img/falca.jpg") no-repeat;
+  background-size: cover;
+  flex: 1 33%;
+}
+.services .container .services-list .prof-list {
+  background: rgba(0, 0, 0, 0.3) url("../img/profnastil.jpg") no-repeat;
+  background-size: cover;
+  flex: 1 33%;
+}
+.services .container .services-list .metalo-cherep {
+  background: rgba(0, 0, 0, 0.3) url("../img/metalocherepica.jpg") no-repeat;
+  background-size: cover;
+  flex: 1 33%;
+}
+.services .container .services-list .keram-cherep {
+  background: rgba(0, 0, 0, 0.3) url("../img/kearmich.jpg") no-repeat;
+  background-size: cover;
+  flex: 1 100%;
+}
+.services {
+  display: flex;
+  flex-direction: row;
+}
+.video-info {
+  background: ghostwhite;
+}
+.video-info .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
