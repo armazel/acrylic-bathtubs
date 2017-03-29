@@ -328,7 +328,6 @@ h2 {
 }
 .examples .container .slick-examples img {
   display: inline-block;
-  padding: 0 10px;
   transition: all 0.5s ease;
 }
 .examples .container .slick-examples img:hover {
@@ -338,7 +337,7 @@ h2 {
 .examples .container .slick-examples .arrow-right {
   display: inline-block;
   position: absolute;
-  right: -60px;
+  right: 0;
   top: 0;
   height: 100%;
   width: 5%;
@@ -358,8 +357,9 @@ h2 {
 .examples .container .slick-examples .arrow-left {
   display: inline-block;
   top: 0;
+  z-index: 100;
   position: absolute;
-  left: -57px;
+  left: 0;
   height: 100%;
   width: 5%;
   background: rgba(0, 0, 0, 0);
@@ -454,6 +454,19 @@ h2 {
   background-size: cover;
   flex: 1 100%;
 }
+.contact-us {
+  background: #f1f1f1;
+  display: block;
+  margin: 0 auto 0 auto;
+}
+.contact-us h2 {
+  padding-top: 40px;
+}
+.contact-us .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .services {
   display: flex;
   flex-direction: row;
@@ -465,4 +478,36 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+.footer {
+  background: #4c4c4c;
+}
+.footer .container {
+  padding: 30px 0;
+}
+.footer .container .copy {
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  color: white;
+  font-weight: 200;
+  display: inline-block;
+  float: left;
+  padding-left: 20px;
+}
+.footer .container .email {
+  display: inline-block;
+  float: right;
+  padding-right: 20px;
+}
+.footer .container .email a {
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  color: white;
+  font-weight: 200;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.footer .container .email a:hover {
+  cursor: pointer;
+  opacity: 0.7;
 }
