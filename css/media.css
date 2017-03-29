@@ -1,5 +1,105 @@
-@media screen and (max-width: 1366px) {
-  /*.main-banner .container .slick-banner-header .banner-picture.banner-picture{
-      height: 800px;
-    }*/
+@media screen and (max-width: 1024px) {
+  .main-banner .container .banner-block .main-banner-title span {
+    font-size: 52px;
+  }
+  .main-banner .container .banner-block .btn {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 20px;
+    text-shadow: 0 0 0 0.2px black;
+    transition: all 1s ease;
+    font-size: 26px;
+    font-weight: 200;
+    font-family: Myriad, Roboto, Helvetica, Arial, sans-serif;
+    outline: none;
+    padding: 15px 30px;
+    box-shadow: 0 6px white;
+    color: white;
+  }
+  .main-banner .container .banner-block .btn:hover {
+    background: white;
+    color: black;
+    box-shadow: 0 6px gray;
+  }
+  .main-banner .container .banner-block .btn:active {
+    top: 2px;
+    box-shadow: 0 3px gray;
+  }
+  .main-banner .container .slick-banner-header {
+    z-index: 1;
+  }
+  .main-banner .container .slick-banner-header .banner-picture {
+    height: 95vh;
+  }
+  .main-banner .container .slick-banner-header .banner-picture .container {
+    width: 100%;
+    height: inherit;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .main-banner .container .slick-banner-header .banner-picture-first {
+    background: url("../img/Roofing1.jpg") center top no-repeat;
+    background-size: cover;
+  }
+  .main-banner .container .slick-banner-header .banner-picture-second {
+    background: url("../img/bath.jpg") center top no-repeat;
+    background-size: cover;
+  }
+  .main-banner .container .slick-banner-header .banner-picture-three {
+    background: url("../img/roofing-boca-raton.jpg") center top no-repeat;
+    background-size: cover;
+  }
+  .navbar-header {
+    width: 100%;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 1;
+    position: absolute;
+  }
+  .navbar-header .container h3 {
+    display: block;
+    margin: 16px auto;
+    text-align: center;
+    font-size: 21px;
+    font-family: Arial, sans-serif;
+    color: white;
+    font-weight: 200;
+    transition: all 0.5s ease;
+    text-decoration: none;
+  }
+  .navbar-header .container h3:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  .navbar-header .container .nav-menu {
+    display: none;
+  }
+  .navbar-header .container .nav-menu.open {
+    display: block;
+    position: fixed;
+    background: white;
+    z-index: 1000;
+  }
+  .navbar-header .container .nav-menu.open li {
+    display: block;
+    list-style-type: none;
+  }
+  .navbar-header .container .nav-menu.open li a {
+    font-size: 21px;
+    font-family: Arial, sans-serif;
+    color: black;
+    font-weight: 200;
+    transition: all 0.5s ease;
+    text-decoration: none;
+  }
+  .navbar-header .container .nav-menu.open li:hover {
+    opacity: 0.7;
+  }
+  .why-acrylic-bath .container h2 {
+    margin: 30px auto 35px auto;
+    font-size: 52px;
+  }
 }

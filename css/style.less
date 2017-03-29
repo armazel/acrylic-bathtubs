@@ -2,8 +2,6 @@ body{
   min-width: 320px;
   width: 100%;
 }
-@import "feedback-form.css";
-@import "media.less";
 @font-face {
   font-family: Plainot;
   src: url('../libs/10213.ttf');
@@ -125,6 +123,9 @@ h2{
   opacity: 1;
   position: absolute;
   .container{
+    h3{
+      display: none;
+    }
     .nav-menu{
       display: flex;
       flex-direction: row;
@@ -470,6 +471,9 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    .sign-up{
+      margin: 50px auto;
+    }
   }
 }
 
@@ -495,22 +499,25 @@ h2{
 .footer{
   background: #4c4c4c;
   .container{
-    padding: 30px 0;
+    padding: 20px 0;
     .copy{
-      font-size: 18px;
+      font-size: 15px;
       font-family: Arial, sans-serif;
       color: white;
       font-weight: 200;
       display: inline-block;
       float: left;
       padding-left: 20px;
+      span{
+        text-transform: uppercase;
+      }
     }
     .email{
       display: inline-block;
       float: right;
       padding-right: 20px;
       a{
-        font-size: 18px;
+        font-size: 15px;
         font-family: Arial, sans-serif;
         color: white;
         font-weight: 200;
@@ -528,7 +535,7 @@ h2{
   opacity: 1;
 }
 .arrow-top.position{
-  top:86%;
+  top:88%;
 }
 .arrow-top{
   position: fixed;
@@ -557,4 +564,5 @@ h2{
   }
 }
 
+@import "feedback-form.css";
 @import "media";

@@ -6,7 +6,7 @@ $(document).ready(function(){
         prevArrow:false,
         nextArrow:false,
         infinity:false,
-        autoplaySpeed: 6000
+        autoplaySpeed: 4000
 });
 
     $('.slick-examples').slick({
@@ -56,9 +56,9 @@ $(document).ready(function(){
     });
 
 
-    jQuery(window).on('scroll', function (e) {
-        var surfacingBlock = jQuery('.arrow-top'),
-            windowScrolled = jQuery(window).scrollTop();
+    $(window).on('scroll', function (e) {
+        var surfacingBlock = $('.arrow-top'),
+            windowScrolled = $(window).scrollTop();
         if (windowScrolled > 0 && screen.width > 768) {
             surfacingBlock.addClass("open");
         }
@@ -71,12 +71,15 @@ $(document).ready(function(){
         else {
             surfacingBlock.removeClass("open");
         }
-        if (windowScrolled > (jQuery(document).height() - jQuery(window).height()) - jQuery('.footer').innerHeight() && screen.width > 680) {
+        if (windowScrolled > ($(document).height() - $(window).height()) - $('.footer').innerHeight() && screen.width > 680) {
             surfacingBlock.addClass("position");
         } else {
             surfacingBlock.removeClass("position");
         }
     });
+    $('.open-navbar').on('click',function () {
+        $('.nav-menu').toggle('open')
+    })
 
 });
 
