@@ -53,15 +53,6 @@ $(document).ready(function(){
 
         $('body,html').animate({scrollTop: top}, 1500);
     });
-    $document = $(document);
-
-    if($document.scrollTop() == 0){
-        $('.arrow-top').addClass('close');
-    }
-    if($document.scrollTop() != 0){
-        alert(123);
-        $('.arrow-top.close').remove();
-    }
 
 
     jQuery(window).on('scroll', function (e) {
