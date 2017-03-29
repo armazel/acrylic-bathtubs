@@ -5,13 +5,13 @@ $(document).ready(function(){
         touchMove:true,
         prevArrow:false,
         nextArrow:false,
+        infinity:false,
         autoplaySpeed: 6000
 });
 
     $('.slick-examples').slick({
-        touchMove:true,
-        dots:false,
-        infinity:false,
+        dots: false,
+        infinite: false,
         speed: 300,
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -23,22 +23,23 @@ $(document).ready(function(){
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
+                    infinity:false
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 769,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll: 2,
+                    infinity:false
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    infinity:false
                 }
             }
         ]

@@ -7,7 +7,7 @@ $(".test-popup-btn").on("click", function () {
 });
 $(".sign-up").on("submit", function (e) {
     var popup = $("#modal-test-submit")
-    var formInput=$('.sign-up input');
+    var formInput=$('.sign-up input:not(:last-of-type)');
     var formAreaOfText=$('.sign-up textarea');
         e.preventDefault();
         formInput.val('');
