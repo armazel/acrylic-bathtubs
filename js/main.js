@@ -78,7 +78,14 @@ $(document).ready(function(){
         }
     });
     $('.open-navbar').on('click',function () {
-        $('.nav-menu').toggle('open')
+        $('.nav-menu.open').remove();
+        $('.nav-menu').addClass('open')
+    });
+    $('.cross-nav').on('click',function (e) {
+        $('.nav-menu').removeClass('open')
+    });
+    $('.nav-menu li').on('click',function (e) {
+        $('.nav-menu').removeClass('open')
     })
 
 });

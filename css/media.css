@@ -54,10 +54,20 @@
   }
   .navbar-header {
     width: 100%;
-    z-index: 10;
+    z-index: 1000;
     background: rgba(0, 0, 0, 0.4);
     opacity: 1;
     position: absolute;
+  }
+  .navbar-header .container .cross-nav {
+    display: block;
+    position: absolute;
+    top: 3%;
+    right: 7%;
+  }
+  .navbar-header .container .cross-nav i {
+    font-size: 40px;
+    color: black;
   }
   .navbar-header .container h3 {
     display: block;
@@ -80,12 +90,24 @@
   .navbar-header .container .nav-menu.open {
     display: block;
     position: fixed;
+    padding: 0;
+    top: 0;
+    left: 0;
+    margin: 0;
+    right: 0;
+    bottom: 0;
     background: white;
-    z-index: 1000;
+    z-index: 1000000;
+  }
+  .navbar-header .container .nav-menu.open li:first-of-type {
+    padding-top: 50px;
   }
   .navbar-header .container .nav-menu.open li {
     display: block;
     list-style-type: none;
+    line-height: 100px;
+    margin: 0 auto;
+    text-align: center;
   }
   .navbar-header .container .nav-menu.open li a {
     font-size: 21px;
@@ -101,5 +123,10 @@
   .why-acrylic-bath .container h2 {
     margin: 30px auto 35px auto;
     font-size: 52px;
+  }
+}
+@media screen and (max-width: 543px) {
+  .header .container .order {
+    padding-bottom: 20px;
   }
 }
