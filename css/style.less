@@ -252,25 +252,6 @@ h2{
         background-size: cover;
       }
     }
-    .arrow-info{
-      position: absolute;
-      top:85%;
-      width: 100%;
-      margin: auto;
-      text-align: center;
-      height: 50px;
-      opacity: 0.8;
-      z-index: 100;
-      &:hover{
-        cursor: pointer;
-        opacity: 1;
-        transition: opacity 1s;
-      }
-      .fa-chevron-down{
-        color: #706954;
-        font-size: 64px;
-      }
-    }
   }
 }
 .why-acrylic-bath{
@@ -543,7 +524,38 @@ h2{
     }
   }
 }
-
+.arrow-top.open{
+  opacity: 1;
+}
+.arrow-top.position{
+  top:80%;
+}
+.arrow-top{
+  position: fixed;
+  top:88%;
+  opacity: 0;
+  right: 40px;
+  border: 3px solid white;
+  background: #ebb19e;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: auto;
+  text-align: center;
+  z-index: 10000;
+  transition: opacity 0.5s;
+  i{
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    top: 10%;
+    left: 16%;
+  }
+  &:hover{
+    cursor: pointer;
+    opacity: 0.7;
+  }
+}
 
 
 @import "media";
