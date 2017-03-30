@@ -13,6 +13,8 @@ $(".sign-up").on("submit", function (e) {
         formInput.val('');
         formAreaOfText.val('');
         popup.addClass("open");
+    $(".modal-container.open").removeClass("open").addClass("close");
+
 });
 
 /**
