@@ -87,6 +87,9 @@ $(document).ready(function(){
     $('.nav-menu li').on('click',function (e) {
         $('.nav-menu').removeClass('open')
     })
+    $('.close-modal-submit').on('click',function () {
+        $('.modal-container-submit').removeClass('open');
+    })
 
 });
 

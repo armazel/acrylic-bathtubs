@@ -1,8 +1,8 @@
 
 
-.sign-up {
+.sign {
+  margin: 5% auto 3% auto;
   position: relative;
-  margin: 15% auto 0 auto;
   width: 480px;
   padding: 33px 25px 29px;
   background: white;
@@ -11,7 +11,7 @@
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
 }
-.sign-up:before, .sign-up:after {
+.sign:before, .sign:after {
   content: '';
   position: absolute;
   bottom: 1px;
@@ -22,12 +22,12 @@
   border-bottom: 1px solid #d2d2d2;
   border-radius: 4px;
 }
-.sign-up:after {
+.sign:after {
   bottom: 3px;
   border-color: #dcdcdc;
 }
 
-.sign-up-title {
+.sign-title {
   margin: -25px -25px 25px;
   padding: 15px 25px;
   line-height: 35px;

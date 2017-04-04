@@ -24,10 +24,7 @@
 
     </head>
     <body>
-    <script>
-        new WOW().init();
-    </script>
-    <section class="header" id="main-banner">
+        <section class="header" id="main-banner">
             <div class="container">
                 <div class="logo-header">
                     <h2><a href="">Парфенон</a></h2>
@@ -158,13 +155,30 @@
         <section class="contact-us" id="contact">
             <h2>Свяжитесь с нами</h2>
             <div class="container">
-                <form id="send-form-into" class="sign-up">
+                <!--<form class="sign-up">
                     <h1 class="sign-up-title">Форма Заказа</h1>
-                    <input  type="text" name="name" class="sign-up-input" placeholder="Как вас зовут?" required="required">
-                    <input  type="text" name="phone" class="sign-up-input" placeholder="Телефон" required="required">
-                    <input type="email" name="email" class="sign-up-input" placeholder="E-mail" required="required">
-                    <textarea placeholder="Комментарии" name="description" class="sign-up-input sign-up-text" required="required"></textarea>
+                    <input required type="text" class="sign-up-input" placeholder="Как вас зовут?">
+                    <input required type="text" class="sign-up-input" placeholder="Телефон">
+                    <input type="email" class="sign-up-input" placeholder="E-mail">
+                    <textarea placeholder="Комментарии" class="sign-up-input sign-up-text"></textarea>
                     <input type="submit" value="Заказать!" class="test-popup-btn-submit sign-up-button icon-arrow-right">
+                </form>-->
+
+
+                <form class="sign">
+                    <h1 class="sign-title">Форма Заказа</h1>
+                    <!-- Hidden Required Fields -->
+                    <input type="hidden" name="project_name" value="parfenon.ru">
+                    <input type="hidden" name="admin_email" value="dragun.egor@gmail.com">
+                    <input type="hidden" name="form_subject" value="Заявка с сайта">
+                    <!-- END Hidden Required Fields -->
+
+                    <input type="text" class="sign-up-input" name="Имя" placeholder="Как вас зовут?" required><br>
+                    <input type="text" class="sign-up-input" name="Почта" placeholder="E-mail" required><br>
+                    <input type="text" class="sign-up-input" name="Телефон" placeholder="Телефон" required>
+                    <textarea class="sign-up-input sign-up-text" placeholder="Комментарии к заказу" name="Комментарии"></textarea><br>
+                    <button class="test-popup-btn-submit sign-up-button icon-arrow-right">Заказать!</button>
+
                 </form>
             </div>
         </section>
@@ -178,47 +192,35 @@
 
         <div id="modal-test" class="modal-container">
             <div class="shade"></div>
-            <h1 class="sign-up-title">Форма Заказа</h1>
-            <form id="send-form" class="sign-up sign-up-section">
-                <input  type="text" name="name" class="sign-up-input" placeholder="Как вас зовут?" required="required">
-                <input  type="text" name="phone" class="sign-up-input" placeholder="Телефон" required="required">
-                <input type="email" name="email" class="sign-up-input" placeholder="E-mail" required="required">
-                <textarea placeholder="Комментарии" name="description" class="sign-up-input sign-up-text" required="required"></textarea>
-                <input type="submit" value="Заказать!" class="test-popup-btn-submit sign-up-button icon-arrow-right">
-                <div class="popup-icon close-modal">x</div>
+
+            <form id="send-form" class="sign sign-up-section">
+                <h1 class="sign-title">Форма Заказа</h1>
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="parfenon.ru">
+                <input type="hidden" name="admin_email" value="dragun.egor@gmail.com">
+                <input type="hidden" name="form_subject" value="Заявка с сайта">
+                <!-- END Hidden Required Fields -->
+
+                <input type="text" class="sign-up-input" name="Имя" placeholder="Как вас зовут?" required><br>
+                <input type="text" class="sign-up-input" name="Почта" placeholder="E-mail" required><br>
+                <input type="text" class="sign-up-input" name="Телефон" placeholder="Телефон" required>
+                <textarea class="sign-up-input sign-up-text" placeholder="Комментарии к заказу" name="Комментарии"></textarea><br>
+                <button class="test-popup-btn-submit sign-up-button icon-arrow-right">Заказать!</button>
             </form>
 
+
         </div>
 
-        <div id="modal-test-submit" class="modal-container">
+        <div id="modal-test-submit" class="modal-container-submit modal-container">
             <div class="shade"></div>
-            <div class="popup-content">
-                <div class="modal-text-cont">
+            <div class="popup-content popup-content-submit">
+                <div class="modal-text-cont modal-text-cont-submit">
                     <h2>Спасибо за ваш заказ!</h2>
                     <p>Наш сотрудник свяжется с вами в ближайшее время.</p>
+                    <button class="test-popup-btn-submit sign-up-button icon-arrow-right popup-icon close-modal-submit">Хорошо</button>
                 </div>
-                <div class="popup-icon close-modal">x</div>
             </div>
         </div>
-
-    <script type="text/javascript">
-        jQuery(document).ready(function() {
-            jQuery('#send-form').submit(function () {
-                var form_data = jQuery(this).serialize();
-                jQuery.ajax({
-                    type: "POST",
-                    url: "sendEmail.php",
-                    data: form_data,
-                    success: function () {
-                        alert("Ваше сообщение отпрвлено!");
-                    },
-                    error: function () {
-                        alert("Ваше сообщение НЕотпрвлено!");
-                    }
-                })
-            });
-        });
-    </script>
 
         <script src="libs/jquery-ui.min.js"></script>
         <script src="js/plugins.js"></script>
@@ -226,6 +228,7 @@
         <script src="js/slick.js"></script>
         <script src="js/jquery.fancybox.min.js"></script>
         <script src="js/popup.js"></script>
+        <script src="send.js"></script>
         <script src="libs/less.min.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

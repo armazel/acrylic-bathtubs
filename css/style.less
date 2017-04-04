@@ -512,7 +512,12 @@ h2{
       float: left;
       padding-left: 20px;
       span{
-        text-transform: uppercase;
+        font-size: 21px;
+        font-family: Astachov;
+        padding: 20px;
+        margin: 0;
+        color: white;
+        text-decoration: none;
       }
     }
     .email{
@@ -538,11 +543,10 @@ h2{
   opacity: 1;
 }
 .arrow-top.position{
-  top:87%;
+  top:86%;
 }
 .arrow-top{
   position: fixed;
-  top:88%;
   opacity: 0;
   right: 40px;
   border: 3px solid white;
@@ -566,6 +570,23 @@ h2{
     opacity: 0.7;
   }
 }
+.modal-container-submit.open{
+  display: block;
+}
+
+.popup-content-submit{
+  margin-top: 20%;
+  .modal-text-cont-submit{
+    p{
+      font-size: 18px;
+      font-family: Arial, sans-serif;
+      color: black;
+      text-align: center;
+      font-weight: 200;
+    }
+  }
+}
+
 
 @import "feedback-form.css";
 @import "media";
