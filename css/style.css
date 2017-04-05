@@ -255,7 +255,14 @@ h2 {
   text-transform: uppercase;
   z-index: 5000;
   overflow: auto;
-  margin: 80px auto 90px auto;
+  margin: 80px auto 20px auto;
+}
+.why-acrylic-bath .container .title-info {
+  display: block;
+}
+.why-acrylic-bath .container .title-info p {
+  font-size: 21px;
+  font-family: Arial, sans-serif;
 }
 .why-acrylic-bath .container .roof-info {
   width: 100%;
@@ -265,37 +272,35 @@ h2 {
   display: block;
 }
 .why-acrylic-bath .container .roof-info .roof-info-block {
-  display: inline-block;
-  transition: all 0.5s ease;
-  position: relative;
-  width: 33%;
-}
-.why-acrylic-bath .container .roof-info .roof-info-block:hover {
-  top: -10px;
-  transition: all 1s ease;
-}
-.why-acrylic-bath .container .roof-info .roof-info-block:hover .logo-info {
-  cursor: pointer;
-}
-.why-acrylic-bath .container .roof-info .roof-info-block:hover .logo-info i {
-  opacity: 1;
-}
-.why-acrylic-bath .container .roof-info .roof-info-block .logo-info {
-  width: 160px;
-  height: 160px;
-  display: inline-block;
-  transition: all 2s ease;
-}
-.why-acrylic-bath .container .roof-info .roof-info-block .logo-info img {
-  width: 160px;
-  height: 160px;
+  display: flex;
+  margin: 40px auto;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
 .why-acrylic-bath .container .roof-info .roof-info-block .info {
-  display: block;
+  flex: 0 50%;
 }
 .why-acrylic-bath .container .roof-info .roof-info-block .info p {
-  font-size: 36px;
-  font-family: Myriad, Roboto, Helvetica, Arial, sans-serif;
+  text-align: left;
+  font-size: 28px;
+  font-family: Arial, sans-serif;
+}
+.why-acrylic-bath .container .roof-info .roof-info-block .number {
+  flex: 0 10%;
+}
+.why-acrylic-bath .container .roof-info .roof-info-block .number p {
+  width: 100px;
+  height: 100px;
+  font-size: 38px;
+  font-family: Arial, sans-serif;
+  background: #ebb19e;
+  border-radius: 50%;
+}
+.why-acrylic-bath .container .roof-info .roof-info-block .number p span {
+  position: relative;
+  top: 25%;
+  color: white;
 }
 .examples {
   margin: 50px auto;
@@ -378,20 +383,22 @@ h2 {
   flex-wrap: wrap;
 }
 .services .container .services-list .service-block {
-  opacity: 1;
   height: 300px;
-  transition: all 0.5s ease;
+  transition: all 1.5s ease;
+  overflow: hidden;
+  opacity: 0.9;
 }
 .services .container .services-list .service-block:hover {
   cursor: pointer;
-  opacity: 0,7;
+  opacity: 1;
   background-blend-mode: hard-light;
+}
+.services .container .services-list .service-block:hover h3 {
+  top: -100%;
 }
 .services .container .services-list .service-block:hover p {
   opacity: 1;
-}
-.services .container .services-list .service-block:hover h3 {
-  top: 10%;
+  bottom: 100%;
 }
 .services .container .services-list .service-block h3 {
   display: block;
@@ -409,12 +416,18 @@ h2 {
 .services .container .services-list .service-block p {
   text-align: center;
   text-shadow: 0  1.4px black;
-  font-size: 21px;
+  font-size: 36px;
   font-weight: 400;
   opacity: 0;
+  bottom: 100%;
+  margin: 0;
   transition: all 0.5s ease;
   color: white;
+  font-weight: 500;
   font-family: Myriad, Roboto, Helvetica, Arial, sans-serif;
+}
+.services .container .services-list .service-block p:not(:first-of-type) {
+  margin-top: 15px;
 }
 .services .container .services-list .falc {
   background: rgba(0, 0, 0, 0.3) url("../img/falca.jpg") no-repeat;
@@ -504,15 +517,13 @@ h2 {
   cursor: pointer;
   opacity: 0.7;
 }
-.arrow-top.open {
+.arrow-info.open {
   opacity: 1;
-}
-.arrow-top.position {
-  top: 86%;
 }
 .arrow-top {
   position: fixed;
   opacity: 0;
+  top: 86%;
   right: 40px;
   border: 3px solid white;
   background: #ebb19e;
@@ -602,6 +613,34 @@ h2 {
     background: url("../img/roofing-boca-raton.jpg") center top no-repeat;
     background-size: cover;
   }
+  .why-acrylic-bath .container .roof-info .roof-info-block .number {
+    padding-right: 25px;
+  }
+  .why-acrylic-bath .container .roof-info {
+    padding: 20px 0;
+  }
+  .arrow-top {
+    position: fixed;
+    opacity: 0;
+    top: 86%;
+    right: 40px;
+    border: 3px solid white;
+    background: #ebb19e;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin: auto;
+    text-align: center;
+    z-index: 10000;
+    transition: opacity 0.5s;
+  }
+  .arrow-top i {
+    position: absolute;
+    color: white;
+    font-size: 28px;
+    top: 11%;
+    left: 18%;
+  }
   .navbar-header {
     width: 100%;
     z-index: 1000;
@@ -673,6 +712,20 @@ h2 {
   .why-acrylic-bath .container h2 {
     margin: 30px auto 35px auto;
     font-size: 52px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .services .container .services-list .falc {
+    flex: 1 50%;
+  }
+  .services .container .services-list .prof-list {
+    flex: 1 50%;
+  }
+  .services .container .services-list .metalo-cherep {
+    flex: 1 50%;
+  }
+  .services .container .services-list .keram-cherep {
+    flex: 1 50%;
   }
 }
 @media screen and (max-width: 543px) {
