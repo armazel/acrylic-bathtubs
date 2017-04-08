@@ -90,7 +90,6 @@ $(document).ready(function(){
     $('.close-modal-submit').on('click',function () {
         $('.modal-container-submit').removeClass('open');
     })
-
 });
 
 

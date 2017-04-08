@@ -119,13 +119,16 @@
     display: block;
     position: fixed;
     padding: 0;
+    overflow-y: hidden;
     top: 0;
     left: 0;
     margin: 0;
+    width: 100%;
     right: 0;
     bottom: 0;
     background: white;
     z-index: 1000000;
+    height: 100%;
   }
   .navbar-header .container .nav-menu.open li:first-of-type {
     padding-top: 50px;
@@ -152,6 +155,9 @@
     margin: 30px auto 35px auto;
     font-size: 52px;
   }
+  .sign-popup {
+    margin: 15% auto 3% auto;
+  }
 }
 @media screen and (max-width: 768px) {
   .services .container .services-list .falc {
@@ -166,9 +172,193 @@
   .services .container .services-list .keram-cherep {
     flex: 1 50%;
   }
+  .why-acrylic-bath .container .roof-info .roof-info-block .info p {
+    font-size: 22px;
+  }
+  .why-acrylic-bath .container .roof-info .roof-info-block .number p {
+    width: 70px;
+    height: 70px;
+  }
+  .why-acrylic-bath .container .roof-info {
+    padding: 0px 0;
+  }
+  .examples .container .slick-examples .arrow-right i {
+    right: 0;
+  }
+  .examples .container .slick-examples .arrow-left i {
+    left: 0;
+  }
+  .main-banner .container .banner-block .main-banner-title span {
+    font-size: 36px;
+  }
+  .services .container h2 {
+    font-size: 46px;
+  }
+  .why-acrylic-bath .container .roof-info .roof-info-block .number p span {
+    position: relative;
+    top: 15%;
+    color: white;
+  }
+  .arrow-top.arrow-top {
+    right: 15px;
+  }
+  .why-acrylic-bath .container .roof-info .roof-info-block {
+    display: block;
+  }
+  .why-acrylic-bath .container .roof-info .roof-info-block .number {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .why-acrylic-bath .container .roof-info .roof-info-block .number p {
+    margin: 0 auto;
+  }
+  .why-acrylic-bath .container .roof-info .roof-info-block .info {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .why-acrylic-bath .container .roof-info .roof-info-block .info p {
+    padding: 30px;
+  }
+  .why-acrylic-bath .container .roof-info .roof-info-block .number {
+    padding: 0;
+  }
+  .examples .container .slick-examples .arrow-left i {
+    left: 10%;
+  }
+  .examples .container .slick-examples .arrow-left i {
+    right: 5%;
+  }
+  .why-acrylic-bath .container h2 {
+    margin: 60px auto 10px auto;
+    font-size: 52px;
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .container.container.container h2 {
+    font-size: 38px;
+  }
+  .modal-container .close-modal {
+    right: 5px;
+    top: 5px;
+    color: white;
+    background: #ebb19e;
+  }
+  .arrow-top {
+    position: fixed;
+    opacity: 0;
+    top: 90%;
+    right: 40px;
+    border: 3px solid white;
+    background: #ebb19e;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin: auto;
+    text-align: center;
+    z-index: 100;
+    transition: opacity 0.5s;
+  }
+  h2 {
+    font-size: 38px !important;
+  }
+  .header .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .header .container > div {
+    padding: 10px 0;
+  }
+  .sign {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .footer .container .email {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px 0;
+  }
+  .footer .container .copy {
+    font-size: 15px;
+    color: white;
+    font-weight: 200;
+    display: block;
+    text-align: center;
+    padding: 5px 0;
+    width: 100%;
+  }
+  .footer .container .copy span {
+    font-size: 15px;
+    padding: 20px;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+  }
+  .modal-container {
+    padding: 0;
+  }
 }
 @media screen and (max-width: 543px) {
   .header .container .order {
     padding-bottom: 20px;
+  }
+  .sign-popup {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .services .container .services-list .falc {
+    flex: 1 100%;
+  }
+  .sign-popup {
+    width: 270px;
+  }
+  .services .container .services-list .prof-list {
+    flex: 1 100%;
+  }
+  .services .container .services-list .metalo-cherep {
+    flex: 1 100%;
+  }
+  .services .container .services-list .keram-cherep {
+    flex: 1 100%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .main-banner .container .banner-block .main-banner-title span {
+    font-size: 26px;
+  }
+  .services .container .services-list .service-block h3 {
+    font-size: 24px;
+  }
+  .main-banner .container .banner-block .btn {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 20px;
+    text-shadow: 0 0 0 0.2px black;
+    transition: all 1s ease;
+    font-size: 20px;
+    font-weight: 200;
+    font-family: Myriad, Roboto, Helvetica, Arial, sans-serif;
+    outline: none;
+    padding: 10px 20px;
+    box-shadow: 0 6px white;
+    color: white;
+  }
+  .main-banner .container .banner-block .btn:hover {
+    background: white;
+    color: black;
+    box-shadow: 0 3px grey;
   }
 }
