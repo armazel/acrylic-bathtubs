@@ -832,9 +832,6 @@ h2 {
     justify-content: space-around;
     align-items: center;
   }
-  .header .container > div {
-    padding: 10px 0;
-  }
   .sign {
     width: 350px;
   }
@@ -921,5 +918,8 @@ h2 {
     background: white;
     color: black;
     box-shadow: 0 3px grey;
+  }
+  .main-banner .container .banner-block .main-banner-title {
+    margin: 40px auto 35px auto;
   }
 }
